@@ -1,0 +1,50 @@
+<div *ngIf="associationType === 'mines'" class="login-component">
+    <div class="main-container">
+        <div class="left-side">
+            <img src="https://old-platform-buckets.s3.ap-south-2.amazonaws.com/images/wonder_cement_bg.png" alt="Background Image" class="background-image">
+        </div>
+        <div class="right-side">
+            <div class="login-box">
+                <img src="https://old-platform-buckets.s3.ap-south-2.amazonaws.com/images/wonder_cements_logo.png" alt="Wonder Cements" class="logo">
+                <form>
+                    <div class="input-group">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" placeholder="Password">
+                    </div>
+                    <div>
+                        <button class="sign-in-button" (click)="login($event)">Log In</button>
+                        <a class="forgot-password">Forgot Password?</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div *ngIf="associationType !== 'mines'" class="akin-login-component">
+    <div id="login-page">
+        <div class="login-page-content">
+            <!-- <div class="akin-logo">
+                <img src="../../../assets/images/akin_login.png" alt="akin-circular-logo">
+            </div> -->
+            <div class="login-page">
+                <div class="login-content">
+                    <div class="login-logo">
+                        <img src="https://old-platform-buckets.s3.ap-south-2.amazonaws.com/images/akin_logo_black.svg" alt="company-logo"
+                            style="height: 100%; width: 100%;">
+                    </div>
+                    <div class="login-form">
+                        <div class="login-label">Password</div>
+                        <div class="login-input">
+                            <input type="password" id="password" placeholder="Password"
+                                (keydown.enter)="login($event)">
+                        </div>
+                    </div>
+                    <div class="login-button">
+                        <button (click)="login($event)">Check In</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

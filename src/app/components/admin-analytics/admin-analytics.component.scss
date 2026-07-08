@@ -1,0 +1,247 @@
+.dashboard-body {
+    height: 100%;
+    width: 100%;
+
+    img {
+        background-size: cover !important;
+    }
+
+
+    .dashboard-flow-items {
+        // margin-top: 2%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+
+        .material-card {
+            height: 110px;
+            width: 30%;
+            border-radius: 8px;
+            box-shadow: rgba(40, 46, 100, 0.25) 0px 1px 22px;
+            // background: #21246b;
+            background: #0d121d;
+            cursor: pointer;
+            transition: 0.3s;
+
+            .card-content {
+                width: 100%;
+                height: 100%;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+
+                .card-left {
+                    margin-top: 4%;
+
+                    .numeric-font {
+                        margin: 0px;
+                        font-weight: 500;
+                        font-size: 36px;
+                    }
+
+                    .title-font {
+                        font-size: 22px;
+                        font-weight: 200;
+                        margin-top: 15px;
+                        margin-bottom: 0px;
+                    }
+                }
+
+                .card-right {
+                    width: 50px;
+                    height: 50px;
+                    border-radius: 50%;
+                    overflow: hidden;
+                    background-color: rgb(0, 117, 255);
+                    border: 2px solid #c6c8c9;
+                    padding: 10px;
+                    margin-left: 12%;
+
+                    img {
+                        height: 30px;
+                    }
+                }
+            }
+        }
+
+        .material-card:hover {
+            // background: #0d121d;
+            background: #21246b;
+            // filter: brightness(0.7);
+            box-shadow: none;
+            transition: 0.3s;
+        }
+    }
+
+    .akin-blogs {
+        margin-top: 10px;
+
+        #blogCarousel {
+            .carousel-item {
+                img {
+                    background-size: cover !important;
+                    background-repeat: no-repeat;
+                    height: 480px;
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    .akin-dashboard-flow-items {
+        margin-top: 1%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        margin-bottom: 1%;
+
+        .akin-material-card {
+            height: 120px;
+            width: 250px;
+            background: rgb(17 13 37);
+            box-shadow: rgba(40, 46, 137, 0.35) 0px 5px 15px;
+            cursor: pointer;
+
+            .akin-card-content {
+                width: 100%;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                // align-items: center;
+
+
+
+                .akin-card-left {
+                    .numeric-font {
+                        margin: 0px;
+                        font-weight: 500;
+                        font-size: 40px;
+                    }
+
+                    .title-font {
+                        font-size: 25px;
+                        font-weight: 200;
+                        margin-top: 15px;
+                        margin-bottom: 0px;
+                    }
+                }
+
+                .akin-card-right {
+                    width: 80px;
+                    height: 80px;
+                    border-radius: 50%;
+                    overflow: hidden;
+                    background-color: rgb(0, 117, 255);
+                    border: 2px solid #c6c8c9;
+                    padding: 12px;
+                    margin-left: 12%;
+                }
+            }
+        }
+    }
+
+    .dashboard-static-items {
+        height: 82%;
+        width: 100%;
+        margin-top: 3%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .akin-dashboard-analytics {
+            height: 100%;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            margin: 5px;
+
+            .akin-inner-dashboard {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 100%;
+                height: 50%;
+
+                .img-content {
+                    height: 100%;
+                    width: 50%;
+
+                    img {
+                        cursor: pointer;
+                    }
+                }
+
+                .road-dashboard {
+                    padding-right: 2.5px;
+                    padding-bottom: 2.5px;
+                }
+
+                .mosquito-dashboard {
+                    padding-left: 2.5px;
+                    padding-bottom: 2.5px;
+                }
+
+                .garbage-dashboard {
+                    padding-right: 2.5px;
+                    padding-top: 2.5px;
+                }
+
+                .project-dashboard {
+                    padding-left: 2.5px;
+                    padding-top: 2.5px;
+                }
+
+                .mines-dashboard {
+                    padding-left: 2.5px;
+                    padding-bottom: 2.5px;
+                }
+
+                .energy-dashboard {
+                    padding-left: 2.5px;
+                    padding-top: 2.5px;
+                }
+            }
+        }
+
+        .dashboard-analytics-pie {
+            margin-left: 2%;
+            width: 50%;
+            height: 100%;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            border-radius: 8px;
+        }
+
+        .dashboard-analytics {
+            margin-left: 2.5%;
+            width: 50%;
+            height: 100%;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            margin-right: 2.5%;
+            border-radius: 8px;
+        }
+    }
+
+    .akin-dashboard-page-div {
+        height: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .dashboard-analytics-pie {
+            margin-left: 2%;
+            width: 40%;
+            height: 100%;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        }
+
+        .dashboard-analytics {
+            margin-left: 2.5%;
+            width: 50%;
+            height: 100%;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            margin-right: 2.5%;
+        }
+    }
+}

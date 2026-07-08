@@ -1,0 +1,58 @@
+<div id="analytics-page">
+    <div class="page-div">
+        <div class="chart-1 alerts-chart">
+            <apx-chart [series]="alertChartOptions.series" [chart]="alertChartOptions.chart"
+                [grid]="alertChartOptions.grid" [xaxis]="alertChartOptions.xaxis" [yaxis]="alertChartOptions.yaxis"
+                [theme]="alertChartOptions.theme" [dataLabels]="alertChartOptions.dataLabels"
+                [plotOptions]="alertChartOptions.plotOptions" [title]="alertChartOptions.title"
+                [colors]="alertChartOptions?.colors"></apx-chart>
+        </div>
+        <div class="chart-2 defects-chart">
+            <apx-chart [series]="analysisChartOptions.series" [chart]="analysisChartOptions.chart"
+                [colors]="analysisChartOptions?.colors" [labels]="analysisChartOptions.labels"
+                [dataLabels]=" analysisChartOptions.dataLabels" [fill]="analysisChartOptions.title"
+                [theme]="analysisChartOptions.theme" [title]="analysisChartOptions.title"></apx-chart>
+        </div>
+    </div>
+    <div *ngIf="selectedProject !== 'mosquito eradication' && selectedProject !== 'bondada bhel solar' && selectedProject !== 'hydraa - vijayawada' && selectedProject !== 'hydraa - fox sagar lake' && selectedProject !== 'hydraa - nala' && selectedProject !== 'garbage pileups' && selectedProject !== 'roads: pothole detection and crack analysis' && selectedProject !== 'bhimavaram'"
+        class="page-div" style="margin-top: 15px;">
+        <div class="chart-1">
+            <apx-chart [series]="chartOptions.series" [chart]="chartOptions.chart" [grid]="chartOptions.grid"
+                [colors]="chartOptions?.colors" [xaxis]="chartOptions.xaxis" [theme]="chartOptions.theme"
+                [title]="chartOptions.title" [dataLabels]="chartOptions.dataLabels"></apx-chart>
+        </div>
+        <div class="chart-2 coming-soon-container">
+            <div class="coming-soon">
+                <span class="letter">C</span>
+                <span class="letter">o</span>
+                <span class="letter">m</span>
+                <span class="letter">i</span>
+                <span class="letter">n</span>
+                <span class="letter">g</span>
+                <span class="letter"> </span>
+                <span class="letter"> </span>
+                <span class="letter"> </span>
+                <span class="letter">S</span>
+                <span class="letter">o</span>
+                <span class="letter">o</span>
+                <span class="letter">n</span>
+                <span class="letter">!</span>
+            </div>
+        </div>
+    </div>
+    <div *ngIf="selectedProject === 'mosquito eradication' || selectedProject === 'garbage pileups' || selectedProject === 'roads: pothole detection and crack analysis' || selectedProject === 'hydraa - vijayawada' || selectedProject === 'hydraa - fox sagar lake' || selectedProject === 'hydraa - nala' || selectedProject === 'bondada bhel solar' || selectedProject === 'bhimavaram'"
+        class="page-div" style="margin-top: 15px;">
+        <div class="chart-1">
+            <apx-chart [series]="chartOptions.series" [chart]="chartOptions.chart" [grid]="chartOptions.grid"
+                [xaxis]="chartOptions.xaxis" [yaxis]="chartOptions.yaxis" [theme]="chartOptions.theme"
+                [dataLabels]="chartOptions.dataLabels" [plotOptions]="chartOptions.plotOptions"
+                [title]="chartOptions.title" [colors]="chartOptions?.colors"></apx-chart>
+        </div>
+        <div class="chart-1">
+            <apx-chart [series]="verticalChartOptions.series" [chart]="verticalChartOptions.chart" [grid]="verticalChartOptions.grid"
+                [xaxis]="verticalChartOptions.xaxis" [yaxis]="verticalChartOptions.yaxis" [theme]="verticalChartOptions.theme"
+                [dataLabels]="verticalChartOptions.dataLabels" [plotOptions]="verticalChartOptions.plotOptions"
+                [title]="verticalChartOptions.title" [colors]="verticalChartOptions?.colors"></apx-chart>
+        </div>
+    </div>
+</div>

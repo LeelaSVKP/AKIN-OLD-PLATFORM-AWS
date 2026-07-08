@@ -1,0 +1,108 @@
+#analytics-page {
+    height: 100%;
+    width: 100%;
+
+    .page-div {
+        height: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .chart-1 {
+            margin-left: 1%;
+            width: 48%;
+            height: 100%;
+        }
+
+        .chart-2 {
+            margin-right: 1%;
+            width: 48%;
+            height: 100%;
+        }
+    }
+
+    .coming-soon-container {
+        text-align: center;
+        border: 2px solid #ffffff;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+        animation: fadeIn 2s ease-in-out;
+        background-color: linear-gradient(to bottom, rgb(17, 13, 37), rgb(40, 46, 137));
+
+        .coming-soon {
+            height: 100%;
+            font-size: 2rem;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .letter {
+            opacity: 0;
+            animation: fadeInOut 3s infinite;
+            /* Continuous animation */
+        }
+
+        .letter:nth-child(1) {
+            animation-delay: 0s;
+        }
+
+        .letter:nth-child(2) {
+            animation-delay: 0.2s;
+        }
+
+        .letter:nth-child(3) {
+            animation-delay: 0.4s;
+        }
+
+        .letter:nth-child(4) {
+            animation-delay: 0.6s;
+        }
+
+        .letter:nth-child(5) {
+            animation-delay: 0.8s;
+        }
+
+        .letter:nth-child(6) {
+            animation-delay: 1s;
+        }
+
+        .letter:nth-child(7) {
+            animation-delay: 1.2s;
+        }
+
+        .letter:nth-child(8) {
+            animation-delay: 1.4s;
+        }
+
+        .letter:nth-child(9) {
+            animation-delay: 1.6s;
+        }
+
+        .letter:nth-child(10) {
+            animation-delay: 1.8s;
+        }
+
+        .letter:nth-child(11) {
+            animation-delay: 2s;
+        }
+
+        .letter:nth-child(12) {
+            animation-delay: 2.2s;
+        }
+
+        @keyframes fadeInOut {
+
+            0%,
+            100% {
+                opacity: 0;
+            }
+
+            50% {
+                opacity: 1;
+            }
+        }
+    }
+}

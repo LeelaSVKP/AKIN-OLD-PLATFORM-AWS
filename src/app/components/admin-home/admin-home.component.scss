@@ -1,0 +1,175 @@
+.main-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: radial-gradient(circle, #0e1118, #060606);
+
+
+    color: #fff;
+    .side-nav-img {
+        width: 150px;
+        height: 150px;
+        position: relative;
+        bottom: 0;
+        left: 18%;
+        overflow: auto;
+    }
+    .side-nav-container {
+        width: 20%;
+        height: inherit;
+
+        .logo-container {
+            width: 100%;
+            height: 19.8%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-color: #060606;
+            // box-shadow: 0px -25px 20px -20px rgba(0, 0, 0, 0.45), 25px 0 20px -20px rgba(0, 0, 0, 0.45);
+            margin-bottom: 2px;
+            cursor: pointer;
+        }
+        .bottom-logo {
+          align-items:top;
+          padding: 60px 0 0 0;
+        }
+
+        .menu-container {
+            width: 100%;
+            height: 60%;
+            background-color: #060606;
+            // box-shadow: 25px 0 20px -20px rgba(40, 46, 137, 0.45);
+
+            ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                position: relative;
+                height: 100%;
+            }
+
+            li {
+                height: 50px;
+                display: flex;
+                align-items: center;
+                justify-content: start;
+                background-color: #060606;
+                padding-left: 20px;
+                // border-bottom: 1px solid rgb(40 46 137);
+                cursor: pointer;
+
+                i {
+                    margin: 20px;
+                }
+
+                h3 {
+                    margin: 0px;
+                }
+            }
+
+            li:hover {
+                background-color: rgb(57, 79, 86);
+            }
+
+            .bottom-item {
+                position: absolute;
+                top: 95%;
+                left: 20%;
+                // bottom: 0;
+                height: 40px;
+                width: 60%;
+                // width: 80%;
+                border-radius: 5px;
+                background-color: #F80032;
+                color: #fff;
+                transition: 0.3s;
+                justify-content: center;
+                padding-left: 0 !important;
+                // margin-left: 25px;
+            }
+
+            .bottom-item:hover {
+                background-color: #fff;
+                color: #F80032; 
+                transition: 0.3s;
+            }
+
+            .selected-menu {
+                background-color: rgba(71, 70, 70, 0.081);
+                border-right: #f7f3f325 2px inset;
+                border-left: #f7f3f341 2px outset;
+            }
+        }
+    }
+
+    .dashboard-container {
+        width: 100%;
+        height: inherit;
+        padding: 10px;
+
+        .dashboard-header {
+          height: 10%;
+          width: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+
+            .dashboard-title {
+                width: 20%;
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+            }
+
+            .dashboard-header-body {
+                width: 50%;
+            }
+
+            .dashboard-user {
+              width: 20%;
+              display: flex;
+              flex-direction: column;
+              justify-content: flex-end;
+              align-items: center;
+
+              .admin-dropdown {
+                position: absolute;
+                top: 10%;
+                right: 52px;
+                height: 40px;
+                width: 150px;
+                // border: 1px solid red;
+                z-index: 100;
+              }
+
+              .admin-dropdown ul {
+                display: flex;
+                justify-content: center;
+                padding: 10px 20px;
+                list-style: none;
+                background: #F80032;
+                border-radius: 4px;
+              }
+
+              .admin-dropdown ul:hover {
+                background: #fff;
+                color: #F80032;
+                cursor: pointer;
+              }
+
+              .admin-dropdown li {
+                color: inherit;
+              }
+            }
+        }
+
+        .admin-home-body {
+            height: 83%;
+            width: 100%;
+        }
+
+    }
+}

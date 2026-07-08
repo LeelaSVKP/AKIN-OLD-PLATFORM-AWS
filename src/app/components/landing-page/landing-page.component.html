@@ -1,0 +1,651 @@
+<div id="landing-page">
+    <div class="landing-page-header">
+        <div class="landing-page-contents">
+            <div class="flex-left-items">
+                <div class="akin-logo" onclick="window.location.href='/'">
+                    <img src="https://old-platform-buckets.s3.ap-south-2.amazonaws.com/icons/akin_logo_white.svg" alt="Akin Analytics Logo">
+                </div>
+                <div class="platform-button">
+                    <a href="/login">Platform</a>
+                </div>
+                <div class="support-button">
+                    <a id="support-button" class="dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">Company</a>
+                    <ul class="dropdown-menu company-dropdown-menu">
+                        <li class="line-items"><a class="dropdown-item" href="/aboutus">About Us</a></li>
+                        <li class="line-items"><a class="dropdown-item" href="/blogs">Blogs</a></li>
+                        <li class="line-items"><a class="dropdown-item" href="/locations">Locations</a></li>
+                        <li class="line-items"><a class="dropdown-item" href="/support">Support</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="flex-right-items">
+                <div class="login-button">
+                    <button onclick="window.location.href='/login'">LOGIN</button>
+                </div>
+                <div class="demo-button">
+                    <button data-bs-toggle="modal" data-bs-target="#scheduleDemo">Schedule a Demo</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="landing-page-videos">
+        <div id="landingCarouselVideos" class="carousel slide" data-bs-ride="carousel">
+            <ol class="carousel-indicators" style="list-style: none;">
+                <li data-bs-target="#landingCarouselVideos" data-bs-slide-to="0" class="active"></li>
+                <li data-bs-target="#landingCarouselVideos" data-bs-slide-to="1"></li>
+                <li data-bs-target="#landingCarouselVideos" data-bs-slide-to="2"></li>
+                <li data-bs-target="#landingCarouselVideos" data-bs-slide-to="3"></li>
+                <li data-bs-target="#landingCarouselVideos" data-bs-slide-to="4"></li>
+                <li data-bs-target="#landingCarouselVideos" data-bs-slide-to="5"></li>
+                <li data-bs-target="#landingCarouselVideos" data-bs-slide-to="6"></li>
+                <li data-bs-target="#landingCarouselVideos" data-bs-slide-to="7"></li>
+                <li data-bs-target="#landingCarouselVideos" data-bs-slide-to="8"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <video class="d-block w-100" autoplay [muted]="true">
+                        <source src="https://old-platform-buckets.s3.ap-south-2.amazonaws.com/videos/environmental_monitoring.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Environmental Monitoring</h5>
+                        <p>Protecting ecosystems and promoting sustainability through advanced environmental monitoring
+                            solutions.</p>
+                        <div class="discover-button">
+                            <button onclick="window.location.href='/environmental-monitoring'">Discover</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <video class="d-block w-100" autoplay [muted]="true">
+                        <source src="https://old-platform-buckets.s3.ap-south-2.amazonaws.com/videos/forestry.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Forestry</h5>
+                        <p>Leading the way in sustainable forestry management with advanced solutions</p>
+                        <div class="discover-button">
+                            <button onclick="window.location.href='/forestry'">Discover</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <video class="d-block w-100" autoplay [muted]="true">
+                        <source src="https://old-platform-buckets.s3.ap-south-2.amazonaws.com/videos/real_estate.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Real Estate</h5>
+                        <p>Integrated real estate solutions, from tracking construction progress to evaluating
+                            properties and utilizing virtual marketing tools</p>
+                        <div class="discover-button">
+                            <button onclick="window.location.href='/real-estate'">Discover</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <video class="d-block w-100" autoplay [muted]="true">
+                        <source src="https://old-platform-buckets.s3.ap-south-2.amazonaws.com/videos/urban_planning.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Urban Planning</h5>
+                        <p>Elevate urban living with our comprehensive website offering disaster risk reduction, route
+                            planning, signalling, and traffic management solutions for resilient city development</p>
+                        <div class="discover-button">
+                            <button onclick="window.location.href='/urban-planning'">Discover</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <video class="d-block w-100" autoplay [muted]="true">
+                        <source src="https://old-platform-buckets.s3.ap-south-2.amazonaws.com/videos/infrastructure.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Infrastructure</h5>
+                        <p>Revolutionizing infrastructure inspection through advanced drone analytics, delivering
+                            actionable insights with speed and precision</p>
+                        <div class="discover-button">
+                            <button onclick="window.location.href='/infrastructure'">Discover</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <video class="d-block w-100" autoplay [muted]="true">
+                        <source src="https://old-platform-buckets.s3.ap-south-2.amazonaws.com/videos/maritime.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Maritime</h5>
+                        <p>Revolutionizing infrastructure inspection through advanced drone analytics, delivering
+                            actionable insights with speed and precision</p>
+                        <div class="discover-button">
+                            <button onclick="window.location.href='/maritime'">Discover</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <video class="d-block w-100" autoplay [muted]="true">
+                        <source src="https://old-platform-buckets.s3.ap-south-2.amazonaws.com/videos/emergency_response.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Emergency Response</h5>
+                        <p>Empower your emergency response strategy with our platform's crowd management, event
+                            monitoring, and real-time situation awareness services</p>
+                        <div class="discover-button">
+                            <button onclick="window.location.href='/emergency-response'">Discover</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <video class="d-block w-100" autoplay [muted]="true">
+                        <source src="https://old-platform-buckets.s3.ap-south-2.amazonaws.com/videos/security_surveillance.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Security & Surveillance</h5>
+                        <p>Enhancing security & surveillance operations through precision drone patrols and services</p>
+                        <div class="discover-button">
+                            <button onclick="window.location.href='/security-surveillance'">Discover</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <video class="d-block w-100" autoplay [muted]="true">
+                        <source src="https://old-platform-buckets.s3.ap-south-2.amazonaws.com/videos/energy_utilities.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Energy & Utilities</h5>
+                        <p>Enhancing energy and utility operations through precision drone service</p>
+                        <div class="discover-button">
+                            <button onclick="window.location.href='/energy-utilities'">Discover</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#landingCarouselVideos" role="button" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#landingCarouselVideos" role="button" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </a>
+        </div>
+
+    </div>
+    <div class="akin-moto">
+        <div class="moto-content">
+            <p>From Sky to Strategy: <span>Akin Analytics</span> Utilizes Advanced <span>Drone</span> Technology
+                to Capture Crucial <span>Data</span>, Providing Comprehensive <span>Analytics</span> to Drive
+                Your Company's <span>Success</span>.</p>
+        </div>
+    </div>
+    <div class="akindrone-pages">
+        <div class="page-1">
+            <div class="title">
+                <div class="title-content">
+                    <p>Harnessing <span>Drone Analytics </span>for Enhanced <span>Safety</span> and
+                        <span>Efficiency</span>.
+                        Experience unparalleled precision and <span>real-time insights</span>.
+                    </p>
+                </div>
+            </div>
+            <div class="display">
+                <div class="quote">
+                    <p>Elevated Mining Operations</p>
+                </div>
+                <div class="display-video">
+                    <video class="d-block w-100" autoplay [muted]="true">
+                        <source src="https://old-platform-buckets.s3.ap-south-2.amazonaws.com/videos/mining_video.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
+        </div>
+        <div class="page-2">
+            <div class="title">
+                <div class="title-content">
+                    <p><span>Drone Surveillance </span>for Superior <span>Real Estate Insights</span>.
+                        Gain a competitive edge with detailed <span> aerial analytics</span>.
+                    </p>
+                </div>
+            </div>
+            <div class="display">
+                <div class="display-video">
+                    <video class="d-block w-100" autoplay [muted]="true">
+                        <source src="https://old-platform-buckets.s3.ap-south-2.amazonaws.com/videos/real_estate_video.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <div class="quote">
+                    <p>Real Estate Intelligence</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="akin-achievements">
+        <div class="recognition-title">
+            <p>Moments of Recognition and Achievement</p>
+        </div>
+        <div class="achievements-image-carousel">
+            <div id="imageCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="https://old-platform-buckets.s3.ap-south-2.amazonaws.com/achievements/success_1.png" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://old-platform-buckets.s3.ap-south-2.amazonaws.com/achievements/success_2.png" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://old-platform-buckets.s3.ap-south-2.amazonaws.com/achievements/success_3.png" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://old-platform-buckets.s3.ap-south-2.amazonaws.com/achievements/success_4.png" class="d-block w-100" alt="...">
+                    <div class="carousel-item">
+                        <img src="https://old-platform-buckets.s3.ap-south-2.amazonaws.com/achievements/success_5.png" class="d-block w-100" alt="...">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="expo-stories">
+            <div class="expo-title">
+                <p>EXPO STORIES</p>
+            </div>
+            <div class="expo-details">
+                <p>Gain insights into the most exciting <span>developments</span> and <span>success</span> stories from
+                    our <span>drone expos</span>.</p>
+            </div>
+            <div class="checkout-button">
+                <button onclick="window.location.href='/blogs'">Check out</button>
+            </div>
+        </div>
+    </div>
+    <div class="akin-client-stories">
+        <div class="client-stories">
+            <div class="story-1">
+                <div class="story-details">
+                    <div class="story-quote">
+                        <img src="https://old-platform-buckets.s3.ap-south-2.amazonaws.com/icons/quotation.svg" alt="...">
+                    </div>
+                    <div class="story-description">
+                        <p>We have been utilizing AkinAnalytics AI Augmented Drone Analytics' monthly monitoring
+                            services for our construction projects, and the impact has been remarkable. Their AI-powered
+                            drone analytics provide clear, comprehensive progress reports that allow us to track each
+                            phase of construction with precision. The detailed visuals and data insights have
+                            streamlined our project management, helping us to stay on schedule and make informed
+                            decisions. AkinAnalytics' service has truly enhanced our operational efficiency and ensured
+                            a high level of transparency throughout the construction process. We highly recommend them
+                            for anyone looking for accurate and timely construction progress monitoring.</p>
+                    </div>
+                    <div class="profile-icon">
+                        <img src="https://www.sreenidhigroup.net/assets/images/logo.png" alt="..."
+                            style="height: 50px; width: 100px; margin-bottom: 8px;">
+                    </div>
+                    <div class="profile-name">
+                        <p>Prithi Arcot</p>
+                    </div>
+                    <div class="profile-company-name">
+                        <p>Sr. Vice President - Sales & BD
+                            Sreenidhi Spaces Pvt Ltd</p>
+                    </div>
+                </div>
+            </div>
+            <div class="story-title">
+                <p>HEAR FROM OUR CLIENTS</p>
+            </div>
+            <div class="story-1">
+                <div class="story-details">
+                    <div class="story-quote">
+                        <img src="https://old-platform-buckets.s3.ap-south-2.amazonaws.com/icons/quotation.svg" alt="...">
+                    </div>
+                    <div class="story-description">
+                        <p>AkinAnalytics' service has truly enhanced our operational efficiency and ensured
+                            a high level of transparency throughout the process. We highly recommend them
+                            for anyone looking for accurate and timely progress monitoring. The detailed visuals
+                            and data insights have streamlined our project management, helping
+                            us to stay on schedule and make informed decisions.</p>
+                    </div>
+                    <div class="profile-icon">
+                        <img src="https://t-hub.co/wp-content/uploads/2023/10/t-hub-logo.png" alt="..."
+                            style="height: 50px; width: 100px; margin-bottom: 8px;">
+                    </div>
+                    <div class="profile-name">
+                        <p>T-Hub</p>
+                    </div>
+                    <div class="profile-company-name">
+                        <p>Hyderabad</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- <div class="akin-blogs">
+        <div class="blogs-carousel">
+            <div id="blogCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="blogs-heading-text">Blogs</div>
+                <ol class="carousel-indicators" style="list-style: none;">
+                    <li data-bs-target="#blogCarousel" data-bs-slide-to="0" class="active"></li>
+                    <li data-bs-target="#blogCarousel" data-bs-slide-to="1"></li>
+                    <li data-bs-target="#blogCarousel" data-bs-slide-to="2"></li>
+                    <li data-bs-target="#blogCarousel" data-bs-slide-to="3"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="article-header">How AI Can Transform Agriculture in India</div>
+                        <div class="article-body">
+                            The article discusses how generative AI (GenAI) can revolutionize agriculture in India
+                            by bridging the knowledge gap among farmers. AI initiatives such as KissanAI and
+                            Microsoft’s Jugalbandi provide localized, voice-based assistance in multiple Indian
+                            languages, helping farmers access critical agricultural knowledge. Various agritech
+                            startups use AI to offer real-time insights on crop health, market prices, and supply
+                            chain management, enhancing productivity and sustainability in the agricultural
+                            sector.<span><a
+                                    href="https://analyticsindiamag.com/how-ai-can-transform-agriculture-in-india/"
+                                    target="_blank"> Read More</a></span>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="article-header">The Power of Artificial Intelligence in Drones</div>
+                        <div class="article-body">
+                            The article explores how the integration of artificial intelligence (AI) in drones is
+                            revolutionizing various industries. It covers the advancements in drone technology
+                            driven by AI, such as enhanced data collection, improved accuracy in tasks, and the
+                            ability to perform complex operations autonomously. The use of AI in drones is
+                            particularly transformative in sectors like agriculture, surveillance, disaster
+                            management, and delivery services, highlighting the significant impact on efficiency and
+                            effectiveness in these areas. <span><a
+                                    href="https://www.analyticsvidhya.com/blog/2022/07/the-power-of-artificial-intelligence-in-drones/"
+                                    target="_blank"> Read More</a></span>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="article-header">Ensuring Perimeter Security Using Camera-Based Smart
+                            Surveillance Systems
+                        </div>
+                        <div class="article-body">
+                            The article details how camera-based smart surveillance systems, powered by advanced
+                            edge AI and vision technology, enhance perimeter security. These systems offer real-time
+                            monitoring, automatic threat detection, and instant alerts, significantly improving
+                            security measures for various applications such as industrial sites, military bases, and
+                            public infrastructure. By leveraging AI, these systems can process vast amounts of
+                            visual data efficiently, identify potential threats with high accuracy, and reduce the
+                            need for human intervention, leading to more effective and reliable security operations.
+                            <span><a href="https://www.edge-ai-vision.com/2024/05/ensuring-perimeter-security-using-camera-based-smart-surveillance-systems/"
+                                    target="_blank"> Read More</a></span>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="article-header">Volume Measurement with Drones
+                        </div>
+                        <div class="article-body">
+                            The article explains how to use DroneDeploy's volumetric analysis tool for precise and
+                            efficient volume measurement. It covers best practices for adding volume capabilities to
+                            maps, selecting areas and base planes, and utilizing the StockPile AI feature for
+                            automatic stockpile boundary detection. The tool offers accuracy within 1-2% compared to
+                            traditional methods, supports various subscription plans, and provides functionalities
+                            like copying and importing annotations, ensuring accurate and consistent volume
+                            calculations over time. <span><a
+                                    href="https://help.dronedeploy.com/hc/en-us/articles/1500004963922-Volume-Measurement-with-Drones"
+                                    target="_blank"> Read More</a></span>
+                        </div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#blogCarousel" role="button" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#blogCarousel" role="button" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </a>
+            </div>
+        </div>
+    </div> -->
+    <div class="akin-associations">
+        <div class="recog-title">
+            AS RECOGNIZED BY
+        </div>
+        <div class="recog-text">
+            Our visionary work has been recognized by leading stakeholders in the ecosystem 
+        </div>
+        <div class="recog-logos">
+            <div class="logo">
+                <img src="https://old-platform-buckets.s3.ap-south-2.amazonaws.com/icons/tsic.png" alt="tsic-logo">
+            </div>
+            <div class="logo">
+                <img src="https://old-platform-buckets.s3.ap-south-2.amazonaws.com/icons/startup_india.png" alt="tsic-logo">
+            </div>
+            <div class="logo">
+                <img src="https://old-platform-buckets.s3.ap-south-2.amazonaws.com/icons/t-hub.png" alt="tsic-logo">
+            </div>
+            <div class="logo">
+                <img src="https://old-platform-buckets.s3.ap-south-2.amazonaws.com/icons/dst.png" alt="tsic-logo">
+            </div>
+            <div class="logo">
+                <img src="https://old-platform-buckets.s3.ap-south-2.amazonaws.com/icons/dubai.png" alt="tsic-logo">
+            </div>
+            <div class="logo">
+                <img src="https://old-platform-buckets.s3.ap-south-2.amazonaws.com/icons/aws_intel.png" alt="tsic-logo" style="background-color: #FFFFFF;">
+            </div>
+        </div>
+        <div class="recog-logos">
+            <div class="sp-logo">
+                <div class="logo">
+                    <img src="https://old-platform-buckets.s3.ap-south-2.amazonaws.com/icons/ts.png" alt="tsic-logo">
+                </div>
+                <div class="logo">
+                    <img src="https://old-platform-buckets.s3.ap-south-2.amazonaws.com/icons/agi.png" alt="tsic-logo">
+                </div>
+                <div class="logo">
+                    <img src="https://old-platform-buckets.s3.ap-south-2.amazonaws.com/icons/ag_hub.png" alt="tsic-logo">
+                </div>
+                <div class="logo">
+                    <img src="https://old-platform-buckets.s3.ap-south-2.amazonaws.com/icons/wef.png" alt="tsic-logo">
+                </div>
+            </div>
+            <div class="logo">
+                <img src="https://old-platform-buckets.s3.ap-south-2.amazonaws.com/icons/cii.png" alt="tsic-logo" style="background-color: #FFFFFF;">
+            </div>
+            <div class="logo">
+                <img src="https://old-platform-buckets.s3.ap-south-2.amazonaws.com/icons/gitex.png" alt="tsic-logo">
+            </div>
+            <div class="logo">
+                <img src="https://old-platform-buckets.s3.ap-south-2.amazonaws.com/icons/jss.png" alt="tsic-logo">
+            </div>
+        </div>
+    </div>
+    <div class="landing-page-footer">
+        <div class="footer-contents">
+            <div class="ft-items">
+                <div class="content-links">
+                    <div class="link-view">
+                        <label class="view-block-title">Company</label>
+                        <ul class="items-list">
+                            <li>
+                                <a class="footer-links" href="/aboutus">About</a>
+                            </li>
+                            <li>
+                                <a class="footer-links" href="/locations">Locations</a>
+                            </li>
+                            <li>
+                                <a class="footer-links" href="/blogs">Careers</a>
+                            </li>
+                            <li>
+                                <a class="footer-links" href="/blogs">Use cases</a>
+                            </li>
+                            <li>
+                                <a class="footer-links" href="/blogs">Terms and Privacy</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="link-view">
+                        <label class="view-block-title">Resources</label>
+                        <ul class="items-list">
+                            <li>
+                                <a class="footer-links" href="/blogs">Webinars</a>
+                            </li>
+                            <li>
+                                <a class="footer-links" href="/blogs">Workshops</a>
+                            </li>
+                            <li>
+                                <a class="footer-links" href="/blogs">Blogs</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="link-view">
+                        <label class="view-block-title">Network</label>
+                        <ul class="items-list">
+                            <li>
+                                <a data-bs-toggle="modal" data-bs-target="#getInTouch">Become a partner</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="content-icons">
+                    <a href="https://www.linkedin.com/company/akin-analytics-solutions/" target="_blank">
+                        <img src="https://old-platform-buckets.s3.ap-south-2.amazonaws.com/icons/linkedin.svg" alt="linkedin">
+                    </a>
+                    <a href="https://www.instagram.com/analyticsakin?igsh=MWhhczl4bzBsbm9hOA==" target="_blank">
+                        <img src="https://old-platform-buckets.s3.ap-south-2.amazonaws.com/icons/instagram.svg" alt="instagram">
+                    </a>
+                    <a href="https://www.youtube.com/@AkinAnalytics" target="_blank">
+                        <img src="https://old-platform-buckets.s3.ap-south-2.amazonaws.com/icons/youtube.svg" alt="youtube">
+                    </a>
+                </div>
+            </div>
+            <div class="ft-details">
+                <div class="info-button">
+                    <button data-bs-toggle="modal" data-bs-target="#getInTouch">Get in touch <span>&gt;</span></button>
+                </div>
+                <div class="info-phone">
+                    <p><span style="margin-right: 5px;"><img src="https://old-platform-buckets.s3.ap-south-2.amazonaws.com/icons/phone_icon.svg"></span>
+                        +91-7337292216</p>
+                </div>
+                <div class="info-email">
+                    <p><span style="margin-right: 5px;"><img
+                                src="https://old-platform-buckets.s3.ap-south-2.amazonaws.com/icons/email_icon.svg"></span>admin&commat;akinanalytics.ai</p>
+                </div>
+                <div class="info-subscribe">
+                    <p>Subscribe to our newsletter</p>
+                </div>
+                <div class="info-copyright">
+                    <p><span style="margin-right: 3px;">&copy;</span>2024 Akin Analytics, all rights reserved</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="modal fade" id="getInTouch" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="getInTouchLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="getInTouchLabel">Learn more about our products and services:</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-5">
+                            <label for="inputNameField" class="form-label">Name:</label>
+                            <input type="text" id="inputNameField" class="form-control form-label-input"
+                                placeholder="Enter your Name">
+                        </div>
+                        <div class="col-md-2"></div>
+                        <div class="col-md-5">
+                            <label for="inputEmailField" class="form-label">Email:</label>
+                            <input type="text" id="inputEmailField" class="form-control form-label-input"
+                                placeholder="Enter your Email">
+                        </div>
+                    </div>
+                    <div class="row" style="margin-top: 2.5%;">
+                        <div class="col-md-7">
+                            <label for="inputMessageField" class="form-label">Message:</label>
+                            <input type="text" id="inputMessageField" class="form-control form-label-input"
+                                placeholder="Enter your Email">
+                        </div>
+                    </div>
+                </div>
+                <div class="submit-btn-modal">
+                    <button type="button" data-bs-dismiss="modal">
+                        Submit
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="scheduleDemo" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="scheduleDemoLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="scheduleDemoLabel">Schedule a Demo with us</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-5">
+                            <label for="inputNameField" class="form-label">Name</label>
+                            <input type="text" id="inputNameField" class="form-control form-label-input"
+                                placeholder="Enter your Name">
+                        </div>
+                        <div class="col-md-2"></div>
+                        <div class="col-md-5">
+                            <label for="inputEmailField" class="form-label">Email</label>
+                            <input type="text" id="inputEmailField" class="form-control form-label-input"
+                                placeholder="Enter your Email">
+                        </div>
+                    </div>
+                    <div class="row" style="margin-top: 2%;">
+                        <div class="col-md-5">
+                            <label for="inputNameField" class="form-label">Company Name</label>
+                            <input type="text" id="inputNameField" class="form-control form-label-input"
+                                placeholder="Enter your company name">
+                        </div>
+                        <div class="col-md-2"></div>
+                        <div class="col-md-5">
+                            <label for="inputIndustryField" class="form-label">Industry</label>
+                            <select class="form-control form-select" id="inputIndustryField" aria-label="industry">
+                                <option selected>Choose your industry</option>
+                                <option value="Infrastructure">Infrastructure</option>
+                                <option value="Energy & Utilities">Energy & Utilities</option>
+                                <option value="Forestry">Forestry</option>
+                                <option value="Environmental Monitoring">Environmental Monitoring</option>
+                                <option value="Manufacturing">Manufacturing</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row" style="margin-top: 2.5%;">
+                        <div class="col-md-7">
+                            <label for="inputMessageField" class="form-label">Problem Statement</label>
+                            <input type="text" id="inputMessageField" class="form-control form-label-input"
+                                placeholder="Describe your problem statement">
+                        </div>
+                    </div>
+                    <div class="row" style="margin-top: 2.5%;">
+                        <div class="col-md-7">
+                            <label for="inputMessageField" class="form-label">Expected Demo Date and Time</label>
+                            <input type="text" id="inputMessageField" class="form-control form-label-input"
+                                placeholder="Enter the Date and Time">
+                        </div>
+                    </div>
+                </div>
+                <div class="submit-btn-modal">
+                    <button type="button" data-bs-dismiss="modal">
+                        Submit
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

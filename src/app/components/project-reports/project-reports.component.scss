@@ -1,0 +1,290 @@
+#reports-container {
+    height: 100%;
+    width: 100%;
+
+    .selection-zone {
+        height: 20%;
+        width: 100%;
+
+        .form-control {
+            height: 42px;
+        }
+
+        .custom-select {
+            line-height: 2;
+            padding: 5px;
+        }
+
+        .custom-select option {
+            padding: 10px;
+        }
+    }
+
+    .text-center {
+        font-family: Montserrat Bold;
+        color: #b7500e;
+        font-weight: 900;
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .reports-zone {
+        height: 80%;
+        width: 100%;
+        overflow-x: hidden;
+        overflow-y: auto;
+
+        .wind_reports {
+            height: 100%;
+            width: 100%;
+            overflow-y: auto;
+        }
+
+        .mines_reports {
+            height: 100%;
+            width: 100%;
+            overflow-y: auto;
+        }
+
+        .no_reports {
+            justify-content: center;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+
+            .no_reports_msg {
+                text-align: center;
+                padding: 20px;
+                border-radius: 10px;
+
+                h1 {
+                    font-family: 'Lobster', cursive;
+                    font-size: 2.5em;
+                }
+            }
+        }
+
+        .report {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+
+            .report_img {
+                margin-right: 10px;
+                width: 70%;
+                height: 100%;
+                overflow: hidden;
+
+                .passsport_img {
+                    height: 100%;
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+
+            .report_data {
+                width: 25%;
+                height: 100%;
+                padding: 10px;
+                background-color: transparent;
+                border: 1px solid #888;
+                border-radius: 4px;
+                color: #fff;
+
+                h1,
+                span {
+                    color: #fff;
+                    font-weight: 400 !important;
+                }
+
+                .report_title {
+                    font-family: 'Lobster', cursive;
+                    text-align: center;
+                }
+
+                .report_content {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    width: 100%;
+                    padding: 10px;
+
+                    .label {
+                        font-weight: bold;
+                    }
+
+                    .value {
+                        text-align: right;
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+    }
+
+    .pile_report_img {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+
+        .passsport_img {
+            height: 100%;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    .pile_report_data {
+        width: 100%;
+        height: 100%;
+        padding: 10px;
+        background-color: transparent;
+        border: 1px solid #888;
+        border-radius: 4px;
+        color: #fff;
+
+        h1,
+        span {
+            color: #fff;
+            font-weight: 400 !important;
+        }
+
+        .report_title {
+            font-family: 'Lobster', cursive;
+            text-align: center;
+        }
+
+        .report_content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            padding: 10px;
+
+            .label {
+                font-weight: bold;
+            }
+
+            .value {
+                text-align: right;
+                font-weight: bold;
+            }
+        }
+    }
+
+    .report-diff-analysis {
+        min-height: 350px;
+        margin-top: 20px;
+    }
+
+    .dark-theme-button {
+        background-color: #f58a44;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+    }
+
+    .dark-theme-button:hover {
+        background-color: #2a99d4;
+    }
+
+    .horizontal-slider {
+        .carousel {
+            position: relative;
+            width: 100%;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .carousel-inner {
+            display: flex;
+            transition: transform 0.5s ease;
+        }
+
+        .carousel-item {
+            min-width: 100%;
+            transition: opacity 0.5s ease;
+            opacity: 0;
+        }
+
+        .carousel-item.active {
+            opacity: 1;
+        }
+
+        .carousel img {
+            width: 100%;
+            display: block;
+            border-radius: 10px;
+        }
+
+        .carousel-control {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: rgba(0, 0, 0, 0.5);
+            color: #fff;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            border-radius: 50%;
+        }
+
+        .carousel-control.prev {
+            left: 10px;
+        }
+
+        .carousel-control.next {
+            right: 10px;
+        }
+
+        .carousel-control:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+    }
+}
+
+.akin-dashboard-page-div {
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .dashboard-analytics-pie {
+        margin-left: 2.5%;
+        width: 40%;
+        height: 100%;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    }
+
+    .dashboard-analytics {
+        margin-left: 2.5%;
+        width: 50%;
+        height: 100%;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        margin-right: 2.5%;
+    }
+}

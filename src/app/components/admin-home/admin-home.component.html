@@ -1,0 +1,213 @@
+<div class="main-container">
+  <div class="side-nav-container">
+    <div *ngIf="associationType === 'wonder'" class="logo-container" (click)="goToLandingPage()">
+      <img src="https://old-platform-buckets.s3.ap-south-2.amazonaws.com/images/wonder_cements_logo.png" alt="logo" style="width: 160px;">
+    </div>
+    <div *ngIf="associationType !== 'wonder'" class="logo-container" (click)="goToLandingPage()">
+      <img src="https://old-platform-buckets.s3.ap-south-2.amazonaws.com/icons/akin_white_gif_new.gif" alt="logo" style="width: 160px;">
+    </div>
+    <div class="menu-container" [ngStyle]="{'height': '33%'}">
+      <ul>
+        <li [ngClass]="{'selected-menu': selectedMenu === 'dashboard'}" (click)="changeMenuItem('dashboard')">
+          <i class="fa fa-tachometer" aria-hidden="true"></i>
+          <h3>Dashboard</h3>
+        </li>
+        <li [ngClass]="{'selected-menu': selectedMenu === 'projects'}" (click)="changeMenuItem('projects')">
+          <i class="fa fa-sitemap" aria-hidden="true"></i>
+          <h3>Projects</h3>
+        </li>
+        <li [ngClass]="{'selected-menu': selectedMenu === 'reports'}" (click)="changeMenuItem('reports')">
+          <i class="fa fa-file-text-o" aria-hidden="true"></i>
+          <h3>Reports</h3>
+        </li>
+        <li [ngClass]="{'selected-menu': selectedMenu === 'alerts'}" (click)="changeMenuItem('alerts')">
+          <i class="fa fa-bell" aria-hidden="true"></i>
+          <h3>Alerts</h3>
+        </li>
+        <li [ngClass]="{'selected-menu': selectedMenu === 'analytics'}" (click)="changeMenuItem('analytics')">
+          <i class="fa fa-line-chart" aria-hidden="true"></i>
+          <h3>Analytics</h3>
+        </li>
+        <!-- <li class="bottom-item" (click)="logout()">
+                  <i class="fa fa-sign-out" aria-hidden="true"></i> Logout
+              </li> -->
+      </ul>
+    </div>
+    <div class="logo-container bottom-logo">
+      <!-- <div>
+          Powered By:
+        </div> -->
+      <img src="https://old-platform-buckets.s3.ap-south-2.amazonaws.com/images/powered-by-akin.svg" alt="logo"
+        style="width: 120px; height: 60px;">
+    </div>
+
+    <div class="akin-blogs">
+      <div class="blogs-carousel">
+        <div id="blogCarousel" class="carousel slide" data-bs-ride="carousel">
+          <div class="blogs-heading-text"
+            style="text-align:center; font: size 17px;background-color: 060606;font-weight:500;height: 20px;">Recognized
+            By</div>
+          <!-- <ol class="carousel-indicators" style="list-style: none;">
+                    <li data-bs-target="#blogCarousel" data-bs-slide-to="0" class="active"></li>
+                    <li data-bs-target="#blogCarousel" data-bs-slide-to="1"></li>
+                    <li data-bs-target="#blogCarousel" data-bs-slide-to="2"></li>
+                    <li data-bs-target="#blogCarousel" data-bs-slide-to="3"></li>
+                </ol> -->
+          <div class="carousel-inner" style="background-color: #060606;">
+            <div class="carousel-item active">
+              <img src="https://old-platform-buckets.s3.ap-south-2.amazonaws.com/icons/powered_by/AP_drone.png" alt="logo" class="side-nav-img"
+                style="height: 150px; width: 160px;">
+            </div>
+            <div class="carousel-item">
+              <img src="https://old-platform-buckets.s3.ap-south-2.amazonaws.com/icons/powered_by/ap_gov.png" alt="logo" class="side-nav-img"
+                style="height: 150px; width: 160px;">
+            </div>
+            <div class="carousel-item">
+              <img src="https://old-platform-buckets.s3.ap-south-2.amazonaws.com/icons/powered_by/aghub.png" alt="logo" class="side-nav-img"
+                style="height: 150px;width: 160px;">
+            </div>
+            <div class="carousel-item">
+              <img src="https://old-platform-buckets.s3.ap-south-2.amazonaws.com/icons/powered_by/agi.png" alt="logo" class="side-nav-img"
+                style="height: 150px;width: 160px;">
+            </div>
+            <div class="carousel-item">
+              <img src="https://old-platform-buckets.s3.ap-south-2.amazonaws.com/icons/powered_by/aws.png" alt="logo" class="side-nav-img"
+                style="height: 150px;width: 160px;">
+            </div>
+            <div class="carousel-item">
+              <img src="https://old-platform-buckets.s3.ap-south-2.amazonaws.com/icons/powered_by/cii.png" alt="logo" class="side-nav-img"
+                style="height: 150px;width: 160px;">
+            </div>
+            <div class="carousel-item">
+              <img src="https://old-platform-buckets.s3.ap-south-2.amazonaws.com/icons/powered_by/defence.png" alt="logo" class="side-nav-img"
+                style="height: 150px;width: 160px;">
+            </div>
+            <div class="carousel-item">
+              <img src="https://old-platform-buckets.s3.ap-south-2.amazonaws.com/icons/powered_by/dst.png" alt="logo" class="side-nav-img"
+                style="height: 150px;width: 160px;">
+            </div>
+            <div class="carousel-item">
+              <img src="https://old-platform-buckets.s3.ap-south-2.amazonaws.com/icons/powered_by/dst_department.png" alt="logo" class="side-nav-img"
+                style="height: 150px;width: 160px;">
+            </div>
+            <div class="carousel-item">
+              <img src="https://old-platform-buckets.s3.ap-south-2.amazonaws.com/icons/powered_by/Dubai.png" alt="logo" class="side-nav-img"
+                style="height: 150px;width: 160px;">
+            </div>
+            <div class="carousel-item">
+              <img src="https://old-platform-buckets.s3.ap-south-2.amazonaws.com/icons/powered_by/gitex.png" alt="logo" class="side-nav-img"
+                style="height: 150px;width: 160px;">
+            </div>
+            <div class="carousel-item">
+              <img src="https://old-platform-buckets.s3.ap-south-2.amazonaws.com/icons/powered_by/isb.png" alt="logo" class="side-nav-img"
+                style="height: 150px;width: 160px;">
+            </div>
+            <div class="carousel-item">
+              <img src="https://old-platform-buckets.s3.ap-south-2.amazonaws.com/icons/powered_by/itic.png" alt="logo" class="side-nav-img"
+                style="height: 150px;width: 160px;">
+            </div>
+            <div class="carousel-item">
+              <img src="https://old-platform-buckets.s3.ap-south-2.amazonaws.com/icons/powered_by/jss.png" alt="logo" class="side-nav-img"
+                style="height: 150px;width: 160px;">
+            </div>
+            <div class="carousel-item">
+              <img src="https://old-platform-buckets.s3.ap-south-2.amazonaws.com/icons/powered_by/nidhi.png" alt="logo" class="side-nav-img"
+                style="height: 150px;width: 160px;">
+            </div>
+            <div class="carousel-item">
+              <img src="https://old-platform-buckets.s3.ap-south-2.amazonaws.com/icons/powered_by/startupindia.png" alt="logo" class="side-nav-img"
+                style="height: 150px;width: 160px;">
+            </div>
+            <div class="carousel-item">
+              <img src="https://old-platform-buckets.s3.ap-south-2.amazonaws.com/icons/powered_by/t-hub.png" alt="logo" class="side-nav-img"
+                style="height: 150px;width: 160px;">
+            </div>
+            <div class="carousel-item">
+              <img src="https://old-platform-buckets.s3.ap-south-2.amazonaws.com/icons/powered_by/tbi.png" alt="logo" class="side-nav-img"
+                style="height: 150px;width: 160px;">
+            </div>
+            <div class="carousel-item">
+              <img src="https://old-platform-buckets.s3.ap-south-2.amazonaws.com/icons/powered_by/TS_Gov.png" alt="logo" class="side-nav-img"
+                style="height: 150px;width: 160px;">
+            </div>
+            <div class="carousel-item">
+              <img src="https://old-platform-buckets.s3.ap-south-2.amazonaws.com/icons/powered_by/tsic.png" alt="logo" class="side-nav-img"
+                style="height: 150px;width: 160px;">
+            </div>
+            <div class="carousel-item">
+              <img src="https://old-platform-buckets.s3.ap-south-2.amazonaws.com/icons/powered_by/wef.png" alt="logo" class="side-nav-img"
+                style="height: 150px;width: 160px;">
+            </div>
+          </div>
+          <!-- <a class="carousel-control-prev" href="#blogCarousel" role="button" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </a> -->
+          <!-- <a class="carousel-control-next" href="#blogCarousel" role="button" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </a> -->
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="dashboard-container">
+    <div class="dashboard-header">
+      <div class="dashboard-title">
+        <i class="fa fa-align-left fa-2x" aria-hidden="true" style="margin: 5px;"></i>
+        <h1 style="margin: 0px; font-weight: 500; text-transform: capitalize;">{{selectedMenu}}</h1>
+      </div>
+      <div class="dashboard-header-body"></div>
+
+      <!-- User dropdown for non-admin users -->
+      <div class="dashboard-user" *ngIf="associationType !== 'admin'" (click)="toggleAdminDropdown()">
+        <div style="display: flex; justify-content: center; align-items: center; cursor: pointer;">
+          <i class="fa fa-user" aria-hidden="true" style="margin-right: 10px;"></i>
+          <h3 style="font-weight: 500; margin: 0px; text-transform: capitalize;">Akin {{currentUser}}</h3>
+          <i class="fa fa-caret-down" aria-hidden="true"
+            style="margin-right: 15px; margin-left: 5px; cursor: pointer;"></i>
+        </div>
+
+        <!-- Dropdown menu -->
+        <div *ngIf="isAdminDropdownOpen" class="admin-dropdown">
+          <ul (click)="logout()">
+            <li><i class="fa fa-sign-out" aria-hidden="true"></i> Logout</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- User dropdown for admin users -->
+      <div class="dashboard-user" *ngIf="associationType === 'admin'" (click)="toggleAdminDropdown()">
+        <div style="display: flex; justify-content: center; align-items: center; cursor: pointer;">
+          <i class="fa fa-user" aria-hidden="true" style="margin-right: 10px;"></i>
+          <h3 style="font-weight: 500; margin: 0px; text-transform: capitalize;">Janaki P</h3>
+          <i class="fa fa-caret-down" aria-hidden="true"
+            style="margin-right: 15px; margin-left: 5px; cursor: pointer;"></i>
+        </div>
+
+        <!-- Dropdown menu -->
+        <div *ngIf="isAdminDropdownOpen" class="admin-dropdown">
+          <ul (click)="logout()">
+            <li><i class="fa fa-sign-out" aria-hidden="true"></i> Logout</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div *ngIf="selectedMenu === 'dashboard'" class="admin-home-body">
+      <app-admin-analytics></app-admin-analytics>
+    </div>
+    <div *ngIf="selectedMenu === 'projects'" class="admin-home-body">
+      <app-admin-projects></app-admin-projects>
+    </div>
+    <div *ngIf="selectedMenu === 'reports'" class="admin-home-body">
+      <app-project-reports></app-project-reports>
+    </div>
+    <div *ngIf="selectedMenu === 'alerts'" class="admin-home-body">
+      <app-admin-alerts></app-admin-alerts>
+    </div>
+    <div *ngIf="selectedMenu === 'analytics'" class="admin-home-body">
+      <app-project-analytics></app-project-analytics>
+    </div>
+  </div>
+</div>

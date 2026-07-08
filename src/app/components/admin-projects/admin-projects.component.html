@@ -1,0 +1,17 @@
+<div class="project-body">
+    <!-- <div class="project-header">
+        <div class="add-project-btn">
+            <button mat-raised-button color="warn" (click)="openAddProjectForm()">
+                <i class="fa fa-plus-circle" aria-hidden="true"></i>
+                ADD PROJECT
+            </button>
+        </div>
+    </div> -->
+    <div class="project-table">
+        <div id="admin-projects" class="table-container">
+            <angular-slickgrid gridId="projects-grid" [columnDefinitions]="gridColumnDefinitions"
+                [gridOptions]="slickGridOptions" [dataset]="slickDataset">
+            </angular-slickgrid>
+        </div>
+    </div>
+</div>

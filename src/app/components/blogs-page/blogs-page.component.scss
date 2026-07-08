@@ -1,0 +1,456 @@
+#blogs-page {
+    height: 100%;
+    width: 100%;
+    background-color: #232323;
+
+    .blogs-page-header {
+        width: 98%;
+        background-color: rgba(83, 83, 83, 0.5);
+        height: 75px;
+        margin: 2% 1% 0;
+        position: fixed;
+        z-index: 2;
+        border-radius: 10px;
+
+        .blogs-page-contents {
+            height: 100%;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            flex-direction: row;
+
+            .flex-left-items,
+            .flex-right-items {
+                display: flex;
+                flex-direction: row;
+                width: 50%;
+            }
+
+            .flex-right-items {
+                justify-content: flex-end;
+            }
+
+            .akin-logo {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-left: 2.5%;
+                cursor: pointer;
+            }
+
+            .platform-button,
+            .blogs-button {
+                height: inherit;
+                width: 215px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                a {
+                    display: inline-block;
+                    font-family: Poppins;
+                    font-size: 21px;
+                    color: #FFFFFF;
+                    text-decoration: none;
+                    transition: transform 0.3s ease;
+                    cursor: pointer;
+                }
+
+                a:hover {
+                    font-size: 25px;
+                    text-decoration: underline;
+                    transform: translateY(5px);
+                }
+
+                .company-dropdown-menu {
+                    background-color: #494949 !important;
+                    border: 1px solid #FFFFFF;
+                    color: #FFFFFF;
+
+                    .line-items {
+                        width: 100%;
+                        height: 50px;
+                        text-align: center;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+
+                        a,
+                        a:hover {
+                            background-color: #494949 !important;
+                        }
+                    }
+
+                    .line-items:hover {
+                        background-color: #494949 !important;
+                        color: #FFFFFF;
+                        text-decoration: underline;
+                    }
+                }
+            }
+
+            .login-button {
+                height: inherit;
+                width: 175px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                button {
+                    width: 101.25px;
+                    height: 40.5px;
+                    background-color: transparent;
+                    color: #FFFFFF;
+                    border-radius: 10px;
+                    border: 1px solid white;
+                    font-family: Poppins;
+                    font-size: 16px;
+                    transition: transform 0.3s ease;
+                    cursor: pointer;
+                }
+
+                button:hover {
+                    transform: translateY(5px);
+                    font-size: 20px;
+                    height: 42px;
+                    width: 108.25px;
+                    background: linear-gradient(90deg, #EC7123, #2384F3);
+                }
+            }
+
+            .demo-button {
+                height: inherit;
+                width: 200px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-right: 2.5%;
+
+                button {
+                    width: 178.25px;
+                    height: 40.5px;
+                    background-color: transparent;
+                    color: #FFFFFF;
+                    border-radius: 10px;
+                    border: 1px solid white;
+                    font-family: Poppins;
+                    font-size: 16px;
+                    transition: transform 0.3s ease;
+                }
+
+                button:hover {
+                    transform: translateY(5px);
+                    height: 42px;
+                    width: 188.25px;
+                    background: linear-gradient(90deg, #EC7123, #2384F3);
+                }
+            }
+        }
+    }
+
+    .blogs-page-header:hover {
+        background-color: rgba(83, 83, 83, 1);
+    }
+
+    .blogs-page-content {
+        width: inherit;
+        background-color: #232323;
+        padding-top: 10%;
+
+        .akin-blogs {
+            width: inherit;
+            height: auto;
+            background-color: inherit;
+            padding: 20px 0px;
+
+            #blogCarousel {
+                background-color: #494949;
+
+                .blogs-heading-text {
+                    width: inherit;
+                    height: 52px;
+                    text-align: center;
+                    color: #FFF;
+                    font-family: Poppins;
+                    font-size: 36px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: normal;
+                }
+
+                .carousel-item {
+                    width: inherit;
+                    height: 300px;
+
+                    .article-header {
+                        width: inherit;
+                        height: 48px;
+                        text-align: center;
+                        color: #999;
+                        font-family: Poppins;
+                        font-size: 32px;
+                        font-style: normal;
+                        font-weight: 700;
+                        line-height: normal;
+                    }
+
+                    .article-body {
+                        width: 80%;
+                        height: 90px;
+                        margin-left: 10%;
+                        flex-shrink: 0;
+                        color: #FFF;
+                        text-align: center;
+                        font-family: Poppins;
+                        font-size: 20px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: normal;
+
+                        a {
+                            color: #FFF;
+                            text-align: center;
+                            font-family: Poppins;
+                            font-size: 20px;
+                            font-style: normal;
+                            font-weight: 400;
+                            line-height: normal;
+                        }
+                    }
+                }
+            }
+        }
+
+        .akin-use-cases {
+            width: inherit;
+            height: auto;
+            background-color: inherit;
+            padding: 20px 0px;
+
+            .use-case-heading {
+                width: inherit;
+                height: auto;
+                text-align: center;
+                color: #FFFFFF;
+                font-family: Poppins;
+                font-size: 40px;
+                font-weight: 700;
+            }
+
+            .use-cases-container {
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                padding: 1.5%;
+
+                .use-case {
+                    width: 25%;
+                    height: auto;
+
+                    .use-case-img {
+                        width: 100%;
+                        height: 25%;
+                    }
+
+                    .use-case-content {
+                        width: 100%;
+                        height: 30%;
+                        background-color: #494949;
+
+                        .content-heading {
+                            font-family: Poppins;
+                            font-size: 24px;
+                            color: #999999;
+                            text-align: center;
+                            padding: 7px;
+                            line-height: 1.2;
+                        }
+
+                        .content-data {
+                            font-family: Poppins;
+                            font-size: 16px;
+                            color: #FFFFFF;
+                            padding: 5px;
+                            line-height: 1.2;
+                        }
+                    }
+                }
+            }
+        }
+
+        .akin-events {
+            width: inherit;
+            height: auto;
+            background-color: #494949;
+            padding: 20px 0px;
+
+            .events-heading {
+                width: inherit;
+                height: auto;
+                text-align: center;
+                color: #FFFFFF;
+                font-family: Poppins;
+                font-size: 40px;
+                font-weight: 700;
+            }
+
+            .events-container {
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                padding: 1.5%;
+
+                .event-info {
+                    width: 25%;
+                    height: auto;
+
+                    .event-img {
+                        width: 100%;
+                        height: 25%;
+                    }
+
+                    .event-content {
+                        width: 100%;
+                        height: 30%;
+                        background-color: #FFFFFF;
+
+                        .event-content-heading {
+                            font-family: Poppins;
+                            font-size: 24px;
+                            color: #000000;
+                            text-align: center;
+                            padding: 7px;
+                            line-height: 1.2;
+                        }
+
+                        .event-content-data {
+                            font-family: Poppins;
+                            font-size: 16px;
+                            color: #494949;
+                            padding: 5px;
+                            line-height: 1.2;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .blogs-page-footer {
+        height: 300px;
+        width: inherit;
+        background-color: inherit;
+
+        .footer-contents {
+            height: inherit;
+            width: inherit;
+            padding: 30px 30px 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            .ft-items {
+                width: 50%;
+                height: auto;
+
+                .content-links {
+                    display: flex;
+                    justify-content: flex-start;
+
+                    .link-view {
+                        margin: 5px 35px;
+
+                        .view-block-title {
+                            color: #FFF;
+                            font-family: "Maven Pro";
+                            font-size: 18px;
+                            font-style: normal;
+                            font-weight: 600;
+                            line-height: normal;
+                            border-bottom: 2px solid #b7500e;
+                            margin: 0 0 10px;
+                            padding: 0 0 10px;
+                        }
+
+                        .items-list {
+                            list-style: none;
+                            padding-left: 0px;
+
+                            li {
+                                color: #FFF;
+                                font-family: "Maven Pro";
+                                font-size: 14px;
+                                font-style: normal;
+                                font-weight: 400;
+                                line-height: 20px;
+                                cursor: pointer;
+
+                                .footer-links {
+                                    color: #FFF;
+                                    text-decoration: none;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .content-icons {
+                    display: flex;
+                    justify-content: start;
+                    align-items: center;
+                    margin-left: 10px;
+
+                    img {
+                        margin: 10px;
+                    }
+                }
+            }
+
+            .ft-details {
+                width: 50%;
+                height: auto;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: flex-end;
+
+                .info-button {
+                    width: 280px;
+                    height: 56px;
+
+                    button {
+                        width: 100%;
+                        height: 100%;
+                        background: #D9D9D9;
+                        color: #000;
+                        font-family: Poppins;
+                        font-size: 24px;
+                        font-style: normal;
+                        font-weight: 600;
+                        line-height: normal;
+                        border-radius: 10px;
+                    }
+
+                    button:hover {
+                        background-color: #535353;
+                        color: #FFFFFF;
+                    }
+                }
+
+                .info-phone,
+                .info-email,
+                .info-subscribe,
+                .info-copyright {
+                    margin: 5px 0px;
+                    color: #FFF;
+                    text-align: right;
+                    font-family: "Maven Pro";
+                    font-size: 22px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 22px;
+                }
+            }
+        }
+    }
+}

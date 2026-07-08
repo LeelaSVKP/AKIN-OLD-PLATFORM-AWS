@@ -1,0 +1,15 @@
+.project-body {
+    height: 100%;
+    width: 100%;
+    margin-top: 2%;
+
+    .project-header {
+        display: flex;
+        align-items: center;
+
+        .add-project-btn {
+            margin-left: 5%;
+            margin-bottom: 2%;
+        }
+    }
+}

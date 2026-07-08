@@ -1,0 +1,795 @@
+#landing-page {
+    height: 100%;
+    width: 100%;
+    background-color: #232323;
+
+    .landing-page-header {
+        width: 98%;
+        background-color: rgba(83, 83, 83, 0.5);
+        height: 75px;
+        margin: 2% 1% 0;
+        position: fixed;
+        z-index: 2;
+        border-radius: 10px;
+
+        .landing-page-contents {
+            height: 100%;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            flex-direction: row;
+
+            .flex-left-items,
+            .flex-right-items {
+                display: flex;
+                flex-direction: row;
+                width: 50%;
+            }
+
+            .flex-right-items {
+                justify-content: flex-end;
+            }
+
+            .akin-logo {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-left: 2.5%;
+                cursor: pointer;
+            }
+
+            .platform-button,
+            .support-button {
+                height: inherit;
+                width: 215px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                a {
+                    display: inline-block;
+                    font-family: Poppins;
+                    font-size: 21px;
+                    color: #FFFFFF;
+                    text-decoration: none;
+                    transition: transform 0.3s ease;
+                    cursor: pointer;
+                }
+
+                a:hover {
+                    font-size: 25px;
+                    text-decoration: underline;
+                    transform: translateY(5px);
+                }
+
+                .company-dropdown-menu {
+                    background-color: #494949 !important;
+                    border: 1px solid #FFFFFF;
+                    color: #FFFFFF;
+
+                    .line-items {
+                        width: 100%;
+                        height: 50px;
+                        text-align: center;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+
+                        a,
+                        a:hover {
+                            background-color: #494949 !important;
+                        }
+                    }
+
+                    .line-items:hover {
+                        background-color: #494949 !important;
+                        color: #FFFFFF;
+                        text-decoration: underline;
+                    }
+                }
+            }
+
+            .login-button {
+                height: inherit;
+                width: 175px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                button {
+                    width: 101.25px;
+                    height: 40.5px;
+                    background-color: transparent;
+                    color: #FFFFFF;
+                    border-radius: 10px;
+                    border: 1px solid white;
+                    font-family: Poppins;
+                    font-size: 16px;
+                    transition: transform 0.3s ease;
+                    cursor: pointer;
+                }
+
+                button:hover {
+                    transform: translateY(5px);
+                    font-size: 20px;
+                    height: 42px;
+                    width: 108.25px;
+                    background: linear-gradient(90deg, #EC7123, #2384F3);
+                }
+            }
+
+            .demo-button {
+                height: inherit;
+                width: 200px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-right: 2.5%;
+
+                button {
+                    width: 178.25px;
+                    height: 40.5px;
+                    background-color: transparent;
+                    color: #FFFFFF;
+                    border-radius: 10px;
+                    border: 1px solid white;
+                    font-family: Poppins;
+                    font-size: 16px;
+                    transition: transform 0.3s ease;
+                }
+
+                button:hover {
+                    transform: translateY(5px);
+                    height: 42px;
+                    width: 188.25px;
+                    background: linear-gradient(90deg, #EC7123, #2384F3);
+                }
+            }
+        }
+    }
+
+    .landing-page-header:hover {
+        background-color: rgba(83, 83, 83, 1);
+    }
+
+    .landing-page-videos {
+        .carousel-caption {
+            position: absolute;
+            top: 55%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: left;
+            background: transparent;
+            padding: 1rem;
+            border-radius: 5px;
+            width: 80%;
+
+            h5 {
+                font-family: Poppins;
+                font-weight: bold;
+                font-size: 48px;
+                line-height: normal;
+                margin-bottom: 20px;
+            }
+
+            p {
+                font-family: Poppins;
+                font-size: 22.5px;
+                line-height: normal;
+                max-width: 65%;
+                margin-bottom: 20px;
+            }
+
+            .discover-button {
+                height: inherit;
+                width: 175px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                button {
+                    width: 142px;
+                    height: 40.5px;
+                    background-color: transparent;
+                    color: #FFFFFF;
+                    border-radius: 10px;
+                    border: 1px solid white;
+                    font-family: Poppins;
+                    font-size: 18px;
+                    transition: transform 0.3s ease;
+                    cursor: pointer;
+                }
+
+                button:hover {
+                    transform: translateY(5px);
+                    font-size: 20px;
+                    height: 42px;
+                    width: 142px;
+                    background: #FFFFFF;
+                    color: #232323;
+                }
+            }
+        }
+
+        .carousel-inner {
+
+            video {
+                object-fit: cover;
+                height: 690px;
+            }
+        }
+
+    }
+
+    .akin-moto {
+        width: inherit;
+        height: 400px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #232323;
+
+        .moto-content {
+            height: 35%;
+            width: 81%;
+            font-family: Poppins;
+            font-weight: 500;
+            font-size: 32px;
+            line-height: normal;
+            color: #999999;
+            text-align: center;
+
+            span {
+                color: #FFFFFF;
+            }
+        }
+    }
+
+    .akindrone-pages {
+        width: 100%;
+        height: 1380px;
+        padding-top: 40px;
+        background-color: inherit;
+
+        .page-1 {
+            width: inherit;
+            height: 660px;
+            background-color: #494949;
+            margin-bottom: 20px;
+
+            .title {
+                height: 150px;
+                width: inherit;
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+
+                .title-content {
+                    height: 80%;
+                    width: 80%;
+                    font-family: Poppins;
+                    font-weight: 500;
+                    font-size: 32px;
+                    line-height: normal;
+                    color: #999999;
+                    text-align: center;
+                    margin-top: 15px;
+
+                    span {
+                        color: #FFFFFF;
+                    }
+                }
+            }
+
+            .display {
+                height: 450px;
+                width: inherit;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                .quote {
+                    height: 145px;
+                    width: 200px;
+                    text-align: center;
+
+                    p {
+                        color: #FFFFFF;
+                        font-family: Poppins;
+                        font-weight: 500;
+                        font-size: 32px;
+                        line-height: normal;
+                    }
+                }
+
+                .display-video {
+                    height: 100%;
+                    width: 54%;
+                    margin-left: 12%;
+
+                    video {
+                        height: inherit;
+                        width: inherit;
+                    }
+                }
+            }
+        }
+
+        .page-2 {
+            width: inherit;
+            height: 660px;
+            background-color: #494949;
+
+            .title {
+                height: 150px;
+                width: inherit;
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+
+                .title-content {
+                    height: 80%;
+                    width: 62%;
+                    font-family: Poppins;
+                    font-weight: 500;
+                    font-size: 32px;
+                    line-height: normal;
+                    color: #999999;
+                    text-align: center;
+                    margin-top: 15px;
+                    margin-left: 5%;
+
+                    span {
+                        color: #FFFFFF;
+                    }
+                }
+            }
+
+            .display {
+                height: 450px;
+                width: inherit;
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+
+                .quote {
+                    height: 145px;
+                    width: 200px;
+                    text-align: center;
+                    margin-left: 8%;
+
+                    p {
+                        color: #FFFFFF;
+                        font-family: Poppins;
+                        font-weight: 500;
+                        font-size: 32px;
+                        line-height: normal;
+                    }
+                }
+
+                .display-video {
+                    height: 100%;
+                    width: 54%;
+                    margin-left: 5%;
+
+                    video {
+                        height: inherit;
+                        width: inherit;
+                    }
+                }
+            }
+        }
+
+    }
+
+    .akin-achievements {
+        width: inherit;
+        height: 300px;
+        background-color: inherit;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .recognition-title {
+            width: 300px;
+            height: 150px;
+            font-family: Poppins;
+            font-weight: 500;
+            font-size: 32px;
+            line-height: normal;
+            color: #FFFFFF;
+        }
+
+        .achievements-image-carousel {
+            width: 360px;
+            height: 260px;
+            margin-right: 10px;
+
+            #imageCarousel {
+                width: inherit;
+                height: inherit;
+
+                .carousel-item {
+                    animation: ease-in-out;
+                    animation-delay: 2500ms;
+                }
+
+            }
+        }
+
+        .expo-stories {
+            height: 260px;
+            width: 500px;
+            border-left: 1px solid #FFFFFF;
+
+            .expo-title {
+                margin-left: 20px;
+                color: #999999;
+                font-family: Poppins;
+                font-weight: 500;
+                font-size: 28px;
+                line-height: normal;
+            }
+
+            .expo-details {
+                margin-left: 20px;
+                color: #999999;
+                font-family: Poppins;
+                font-weight: 500;
+                font-size: 24px;
+                line-height: normal;
+
+                p {
+                    height: 110px;
+                    width: 490px;
+
+                    span {
+                        color: #FFFFFF;
+                    }
+                }
+            }
+
+            .checkout-button {
+                font-family: Poppins;
+                font-weight: 500;
+                font-size: 25px;
+                line-height: normal;
+                margin-left: 32%;
+
+                button {
+                    width: 190px;
+                    height: 48px;
+                    background-color: #DC6727;
+                    color: #FFFFFF;
+                    border-radius: 10px;
+                }
+
+                button:hover {
+                    background-color: #2384F3;
+                }
+            }
+        }
+    }
+
+    .akin-client-stories {
+        width: inherit;
+        height: auto;
+        background-color: inherit;
+        padding: 20px 0px;
+
+        .client-stories {
+            margin: 20px 0px;
+            background-color: inherit;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .story-1 {
+                width: 470px;
+                height: 330px;
+                flex-shrink: 0;
+                border-radius: 23.277px;
+                background: #686768;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                .story-details {
+                    width: 460px;
+                    height: 320px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+                    flex-shrink: 0;
+                    border-radius: 23.277px;
+                    background: linear-gradient(90deg, #4B4A4B, #373737);
+
+                    .story-quote {
+                        width: inherit;
+                        height: 21px;
+                        margin-left: 15px;
+
+                        img {
+                            height: inherit;
+                            width: 28px;
+                        }
+                    }
+
+                    .story-description {
+                        width: 400px;
+                        font-family: Poppins;
+                        font-style: italic;
+                        font-size: 8px;
+                        color: #FFFFFF;
+                    }
+
+                    .profile-name {
+                        width: 65.487px;
+                        height: 16.95px;
+                        color: #999;
+                        text-align: center;
+                        font-family: Poppins;
+                        font-size: 8.845px;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: 14.898px;
+                        letter-spacing: 0.442px;
+                        text-transform: uppercase;
+                    }
+
+                    .profile-company-name {
+                        width: 166.939px;
+                        height: 16.95px;
+                        color: #FFF;
+                        text-align: center;
+                        font-family: Poppins;
+                        font-size: 8.38px;
+                        font-style: normal;
+                        font-weight: 300;
+                        line-height: 14.898px;
+                    }
+                }
+            }
+
+            .story-title {
+                height: 200px;
+                width: 130px;
+                margin: 0px 50px;
+                font-family: Poppins;
+                font-weight: 500;
+                font-size: 32px;
+                line-height: normal;
+                color: #FFFFFF;
+            }
+        }
+    }
+
+    .akin-blogs {
+        width: inherit;
+        height: auto;
+        background-color: inherit;
+        padding: 20px 0px;
+
+        #blogCarousel {
+            .blogs-heading-text {
+                width: inherit;
+                height: 52px;
+                text-align: center;
+                color: #FFF;
+                font-family: Poppins;
+                font-size: 36px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+            }
+
+            .carousel-item {
+                width: inherit;
+                height: 300px;
+
+                .article-header {
+                    width: inherit;
+                    height: 48px;
+                    text-align: center;
+                    color: #999;
+                    font-family: Poppins;
+                    font-size: 32px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: normal;
+                }
+
+                .article-body {
+                    width: 80%;
+                    height: 90px;
+                    margin-left: 10%;
+                    flex-shrink: 0;
+                    color: #FFF;
+                    text-align: center;
+                    font-family: Poppins;
+                    font-size: 20px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+
+                    a {
+                        color: #FFF;
+                        text-align: center;
+                        font-family: Poppins;
+                        font-size: 20px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: normal;
+                    }
+                }
+            }
+        }
+    }
+
+    .akin-associations {
+        width: inherit;
+        height: 320px;
+        background-color: inherit;
+
+        .recog-title {
+            height: 36px;
+            color: #FFF;
+            font-family: Poppins;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+            text-align: center;
+        }
+
+        .recog-text {
+            height: 28px;
+            color: #FFF;
+            font-family: Poppins;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            text-align: center;
+        }
+
+        .recog-logos {
+            width: 99%;
+            height: 100px;
+            margin: 10px 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .logo {
+                margin: 10px;
+            }
+
+            .sp-logo {
+                background-color: #FFFFFF;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+        }
+    }
+
+    .landing-page-footer {
+        height: 300px;
+        width: inherit;
+        background-color: inherit;
+
+        .footer-contents {
+            height: inherit;
+            width: inherit;
+            padding: 30px 30px 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            .ft-items {
+                width: 50%;
+                height: auto;
+
+                .content-links {
+                    display: flex;
+                    justify-content: flex-start;
+
+                    .link-view {
+                        margin: 5px 35px;
+
+                        .view-block-title {
+                            color: #FFF;
+                            font-family: "Maven Pro";
+                            font-size: 18px;
+                            font-style: normal;
+                            font-weight: 600;
+                            line-height: normal;
+                            border-bottom: 2px solid #b7500e;
+                            margin: 0 0 10px;
+                            padding: 0 0 10px;
+                        }
+
+                        .items-list {
+                            list-style: none;
+                            padding-left: 0px;
+
+                            li {
+                                color: #FFF;
+                                font-family: "Maven Pro";
+                                font-size: 14px;
+                                font-style: normal;
+                                font-weight: 400;
+                                line-height: 20px;
+                                cursor: pointer;
+
+                                .footer-links {
+                                    color: #FFF;
+                                    text-decoration: none;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .content-icons {
+                    display: flex;
+                    justify-content: start;
+                    align-items: center;
+                    margin-left: 10px;
+
+                    img {
+                        margin: 10px;
+                    }
+                }
+            }
+
+            .ft-details {
+                width: 50%;
+                height: auto;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: flex-end;
+
+                .info-button {
+                    width: 280px;
+                    height: 56px;
+
+                    button {
+                        width: 100%;
+                        height: 100%;
+                        background: #D9D9D9;
+                        color: #000;
+                        font-family: Poppins;
+                        font-size: 24px;
+                        font-style: normal;
+                        font-weight: 600;
+                        line-height: normal;
+                        border-radius: 10px;
+                    }
+
+                    button:hover {
+                        background-color: #535353;
+                        color: #FFFFFF;
+                    }
+                }
+
+                .info-phone,
+                .info-email,
+                .info-subscribe,
+                .info-copyright {
+                    margin: 5px 0px;
+                    color: #FFF;
+                    text-align: right;
+                    font-family: "Maven Pro";
+                    font-size: 22px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 22px;
+                }
+            }
+        }
+    }
+}

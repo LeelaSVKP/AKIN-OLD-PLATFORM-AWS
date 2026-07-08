@@ -1,0 +1,341 @@
+#locations-page {
+    height: 100%;
+    width: 100%;
+    background-color: #232323;
+
+    .locations-page-header {
+        width: 98%;
+        background-color: rgba(83, 83, 83, 0.5);
+        height: 75px;
+        margin: 2% 1% 0;
+        position: fixed;
+        z-index: 2;
+        border-radius: 10px;
+
+        .locations-page-contents {
+            height: 100%;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            flex-direction: row;
+
+            .flex-left-items,
+            .flex-right-items {
+                display: flex;
+                flex-direction: row;
+                width: 50%;
+            }
+
+            .flex-right-items {
+                justify-content: flex-end;
+            }
+
+            .akin-logo {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-left: 2.5%;
+                cursor: pointer;
+            }
+
+            .platform-button,
+            .locations-button {
+                height: inherit;
+                width: 215px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                a {
+                    display: inline-block;
+                    font-family: Poppins;
+                    font-size: 21px;
+                    color: #FFFFFF;
+                    text-decoration: none;
+                    transition: transform 0.3s ease;
+                    cursor: pointer;
+                }
+
+                a:hover {
+                    font-size: 25px;
+                    text-decoration: underline;
+                    transform: translateY(5px);
+                }
+
+                .company-dropdown-menu {
+                    background-color: #494949 !important;
+                    border: 1px solid #FFFFFF;
+                    color: #FFFFFF;
+
+                    .line-items {
+                        width: 100%;
+                        height: 50px;
+                        text-align: center;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+
+                        a,
+                        a:hover {
+                            background-color: #494949 !important;
+                        }
+                    }
+
+                    .line-items:hover {
+                        background-color: #494949 !important;
+                        color: #FFFFFF;
+                        text-decoration: underline;
+                    }
+                }
+            }
+
+            .login-button {
+                height: inherit;
+                width: 175px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                button {
+                    width: 101.25px;
+                    height: 40.5px;
+                    background-color: transparent;
+                    color: #FFFFFF;
+                    border-radius: 10px;
+                    border: 1px solid white;
+                    font-family: Poppins;
+                    font-size: 16px;
+                    transition: transform 0.3s ease;
+                    cursor: pointer;
+                }
+
+                button:hover {
+                    transform: translateY(5px);
+                    font-size: 20px;
+                    height: 42px;
+                    width: 108.25px;
+                    background: linear-gradient(90deg, #EC7123, #2384F3);
+                }
+            }
+
+            .demo-button {
+                height: inherit;
+                width: 200px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-right: 2.5%;
+
+                button {
+                    width: 178.25px;
+                    height: 40.5px;
+                    background-color: transparent;
+                    color: #FFFFFF;
+                    border-radius: 10px;
+                    border: 1px solid white;
+                    font-family: Poppins;
+                    font-size: 16px;
+                    transition: transform 0.3s ease;
+                }
+
+                button:hover {
+                    transform: translateY(5px);
+                    height: 42px;
+                    width: 188.25px;
+                    background: linear-gradient(90deg, #EC7123, #2384F3);
+                }
+            }
+        }
+    }
+
+    .locations-page-header:hover {
+        background-color: rgba(83, 83, 83, 1);
+    }
+
+    .locations-page-content {
+        width: inherit;
+        background-color: #232323;
+        padding-top: 10%;
+
+        .page-title {
+            width: inherit;
+            font-family: Poppins;
+            font-size: 40px;
+            color: #FFFFFF;
+            text-align: center;
+            text-transform: uppercase;
+        }
+
+        .locations-details {
+            width: inherit;
+            height: inherit;
+
+            .location-info {
+                width: inherit;
+                height: 450px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                .location-img {
+                    height: 70%;
+                    width: 40%;
+                    background-color: #C4C4C4;
+                }
+
+                .address {
+                    height: 30%;
+                    width: 30%;
+                    background-color: #FFFFFF;
+
+                    .address-title {
+                        padding: 5%;
+                        color: #000;
+                        font-size: 24px;
+                        font-family: Poppins;
+                        text-align: center;
+                        font-weight: 700;
+                        font-style: italic;
+
+                        .location-map {
+                            margin: 3px;
+                            cursor: pointer;
+
+                            img {
+                                height: 30px;
+                                width: 30px;
+                            }
+                        }
+                    }
+
+                    .address-details {
+                        padding: 2%;
+                        color: #232323;
+                        font-family: "Maven Pro";
+                        font-size: 18px;
+                        font-style: normal;
+                        text-align: left;
+                    }
+                }
+            }
+        }
+    }
+
+    .locations-page-footer {
+        height: 300px;
+        width: inherit;
+        background-color: inherit;
+
+        .footer-contents {
+            height: inherit;
+            width: inherit;
+            padding: 30px 30px 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            .ft-items {
+                width: 50%;
+                height: auto;
+
+                .content-links {
+                    display: flex;
+                    justify-content: flex-start;
+
+                    .link-view {
+                        margin: 5px 35px;
+
+                        .view-block-title {
+                            color: #FFF;
+                            font-family: "Maven Pro";
+                            font-size: 18px;
+                            font-style: normal;
+                            font-weight: 600;
+                            line-height: normal;
+                            border-bottom: 2px solid #b7500e;
+                            margin: 0 0 10px;
+                            padding: 0 0 10px;
+                        }
+
+                        .items-list {
+                            list-style: none;
+                            padding-left: 0px;
+
+                            li {
+                                color: #FFF;
+                                font-family: "Maven Pro";
+                                font-size: 14px;
+                                font-style: normal;
+                                font-weight: 400;
+                                line-height: 20px;
+                                cursor: pointer;
+
+                                .footer-links {
+                                    color: #FFF;
+                                    text-decoration: none;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .content-icons {
+                    display: flex;
+                    justify-content: start;
+                    align-items: center;
+                    margin-left: 10px;
+
+                    img {
+                        margin: 10px;
+                    }
+                }
+            }
+
+            .ft-details {
+                width: 50%;
+                height: auto;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: flex-end;
+
+                .info-button {
+                    width: 280px;
+                    height: 56px;
+
+                    button {
+                        width: 100%;
+                        height: 100%;
+                        background: #D9D9D9;
+                        color: #000;
+                        font-family: Poppins;
+                        font-size: 24px;
+                        font-style: normal;
+                        font-weight: 600;
+                        line-height: normal;
+                        border-radius: 10px;
+                    }
+
+                    button:hover {
+                        background-color: #535353;
+                        color: #FFFFFF;
+                    }
+                }
+
+                .info-phone,
+                .info-email,
+                .info-subscribe,
+                .info-copyright {
+                    margin: 5px 0px;
+                    color: #FFF;
+                    text-align: right;
+                    font-family: "Maven Pro";
+                    font-size: 22px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 22px;
+                }
+            }
+        }
+    }
+}

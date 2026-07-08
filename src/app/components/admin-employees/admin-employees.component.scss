@@ -1,0 +1,15 @@
+.employee-body {
+    height: 100%;
+    width: 100%;
+    margin-top: 2%;
+
+    .employee-header {
+        display: flex;
+        align-items: center;
+
+        .add-emp-btn {
+            margin-left: 5%;
+            margin-bottom: 2%;
+        }
+    }
+}

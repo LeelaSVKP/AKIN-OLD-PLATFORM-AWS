@@ -1,0 +1,157 @@
+<div class="dashboard-body">
+    <div class="dashboard-flow-items">
+        <mat-card class="material-card" (click)="changeMenuType('projects')">
+            <mat-card-content style="height: 100%;">
+                <div class="card-content">
+                    <div class="card-left">
+                        <h1 class="numeric-font">1</h1>
+                        <h4 class="title-font">Projects</h4>
+                    </div>
+                    <div class="card-right">
+                        <img src="https://old-platform-buckets.s3.ap-south-2.amazonaws.com/images/projects_icon.svg" alt="project_icon">
+                    </div>
+                </div>
+            </mat-card-content>
+        </mat-card>
+        <mat-card class="material-card" (click)="changeMenuType('alerts')">
+            <mat-card-content style="height: 100%;">
+                <div class="card-content">
+                    <div class="card-left">
+                        <h1 class="numeric-font">{{alertsCount}}</h1>
+                        <h4 class="title-font">Alerts</h4>
+                    </div>
+                    <div class="card-right">
+                        <img src="https://old-platform-buckets.s3.ap-south-2.amazonaws.com/images/alerts_svg.svg" alt="alerts_icon">
+                    </div>
+                </div>
+            </mat-card-content>
+        </mat-card>
+        <mat-card *ngIf="currentUser === 'admin'" class="material-card" (click)="openUploadFileDialog()">
+            <mat-card-content style="height: 100%;">
+                <div class="card-content">
+                    <div class="card-left">
+                        <h1 class="numeric-font">{{uploadsCount}}</h1>
+                        <h4 class="title-font">Uploads</h4>
+                    </div>
+                    <div class="card-right">
+                        <img src="https://old-platform-buckets.s3.ap-south-2.amazonaws.com/images/upload_icon.svg" alt="upload_icon">
+                    </div>
+                </div>
+            </mat-card-content>
+        </mat-card>
+    </div>
+
+    <div class="dashboard-static-items">
+        <div class="akin-dashboard-analytics">
+            <div class="akin-inner-dashboard">
+                <div class="road-dashboard img-content" (click)="showProjectAnalytics('roads')">
+                    <img class="dashboard-car-img" src="https://old-platform-buckets.s3.ap-south-2.amazonaws.com/images/road_dashboard.png" alt="upload_icon"
+                        style="height: 100%; width: 100%;">
+                </div>
+                <div class="mosquito-dashboard img-content" (click)="showProjectAnalytics('mosquito')">
+                    <img class="dashboard-car-img" src="https://old-platform-buckets.s3.ap-south-2.amazonaws.com/images/mosquito_dashboard.png" alt="upload_icon"
+                        style="height: 100%; width: 100%;">
+                </div>
+                <div class="mines-dashboard img-content" (click)="showProjectAnalytics('mines')">
+                    <img class="dashboard-car-img" src="https://old-platform-buckets.s3.ap-south-2.amazonaws.com/images/mines_dashboard.png"
+                        alt="upload_icon" style="height: 100%; width: 100%;">
+                </div>
+            </div>
+            <div class="akin-inner-dashboard">
+                <div class="garbage-dashboard img-content" (click)="showProjectAnalytics('garbage')">
+                    <img class="dashboard-car-img" src="https://old-platform-buckets.s3.ap-south-2.amazonaws.com/images/garbage_dashboard.png"
+                        alt="upload_icon" style="height: 100%; width: 100%;">
+                </div>
+                <div class="project-dashboard img-content" (click)="showProjectAnalytics('project')">
+                    <img class="dashboard-car-img" src="https://old-platform-buckets.s3.ap-south-2.amazonaws.com/images/infrastructure_dashboard.png"
+                        alt="upload_icon" style="height: 100%; width: 100%;">
+                </div>
+                <div class="energy-dashboard img-content" (click)="showProjectAnalytics('energy')">
+                    <img class="dashboard-car-img" src="https://old-platform-buckets.s3.ap-south-2.amazonaws.com/images/solar_dashboard.png"
+                        alt="upload_icon" style="height: 100%; width: 100%;">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- <div class="dashboard-static-items"
+        *ngIf="(associationType !== 'akin' && associationType !== 'admin') || selectedProject === 'automobiles'">
+        <div class="dashboard-analytics-pie">
+            <div *ngIf="selectedProject !== null">
+                <apx-chart [series]="alertChartOptions.series" [chart]="alertChartOptions.chart"
+                    [grid]="alertChartOptions.grid" [xaxis]="alertChartOptions.xaxis" [yaxis]="alertChartOptions.yaxis"
+                    [theme]="alertChartOptions.theme" [dataLabels]="alertChartOptions.dataLabels"
+                    [plotOptions]="alertChartOptions.plotOptions" [title]="alertChartOptions.title"></apx-chart>
+            </div>
+        </div>
+        <div class="dashboard-analytics">
+            <div *ngIf="selectedProject !== null">
+                <apx-chart [series]="analysisChartOptions.series" [chart]="analysisChartOptions.chart"
+                    [labels]="analysisChartOptions.labels" [dataLabels]=" analysisChartOptions.dataLabels"
+                    [fill]="analysisChartOptions.title" [theme]="analysisChartOptions.theme"
+                    [title]="analysisChartOptions.title" [colors]="analysisChartOptions.colors"></apx-chart>
+            </div>
+        </div>
+    </div>
+
+    <div class="dashboard-static-items"
+        *ngIf="(associationType !== 'akin' && associationType !== 'admin') || selectedProject === 'stock allocation'">
+        <div class="dashboard-analytics-pie">
+            <div *ngIf="selectedProject !== null">
+                <apx-chart [series]="alertChartOptions.series" [chart]="alertChartOptions.chart"
+                    [grid]="alertChartOptions.grid" [xaxis]="alertChartOptions.xaxis" [yaxis]="alertChartOptions.yaxis"
+                    [theme]="alertChartOptions.theme" [dataLabels]="alertChartOptions.dataLabels"
+                    [plotOptions]="alertChartOptions.plotOptions" [title]="alertChartOptions.title"></apx-chart>
+            </div>
+        </div>
+        <div class="dashboard-analytics">
+            <div *ngIf="selectedProject !== null">
+                <apx-chart [series]="analysisChartOptions.series" [chart]="analysisChartOptions.chart"
+                    [labels]="analysisChartOptions.labels" [dataLabels]=" analysisChartOptions.dataLabels"
+                    [fill]="analysisChartOptions.title" [theme]="analysisChartOptions.theme"
+                    [title]="analysisChartOptions.title"></apx-chart>
+            </div>
+        </div>
+    </div>
+
+    <div class="dashboard-static-items"
+        *ngIf="(associationType === 'akin' || associationType === 'admin') && selectedProject === 'progress analysis for large scale projects'">
+        <div class="dashboard-analytics-pie">
+            <div *ngIf="selectedProject !== null">
+                <apx-chart [series]="alertChartOptions.series" [chart]="alertChartOptions.chart"
+                    [colors]="alertChartOptions.colors" [grid]="alertChartOptions.grid"
+                    [xaxis]="alertChartOptions.xaxis" [yaxis]="alertChartOptions.yaxis"
+                    [theme]="alertChartOptions.theme" [dataLabels]="alertChartOptions.dataLabels"
+                    [plotOptions]="alertChartOptions.plotOptions" [title]="alertChartOptions.title"></apx-chart>
+            </div>
+        </div>
+        <div class="dashboard-analytics">
+            <div *ngIf="selectedProject !== null">
+                <apx-chart [series]="analysisChartOptions.series" [chart]="analysisChartOptions.chart"
+                    [colors]="analysisChartOptions.colors" [labels]="analysisChartOptions.labels"
+                    [dataLabels]=" analysisChartOptions.dataLabels" [fill]="analysisChartOptions.title"
+                    [theme]="analysisChartOptions.theme" [title]="analysisChartOptions.title"></apx-chart>
+            </div>
+        </div>
+    </div>
+
+    <div class="dashboard-static-items"
+        *ngIf="(associationType === 'akin' || associationType === 'admin') && selectedProject !== 'automobiles' && selectedProject !== 'stock allocation' && selectedProject !== 'progress analysis for large scale projects'">
+        <div class="dashboard-analytics-pie">
+            <div *ngIf="selectedProject !== null && donutChartOptions !== null && donutChartOptions !== undefined">
+                <apx-chart [series]="donutChartOptions.series" [chart]="donutChartOptions.chart"
+                    [grid]="donutChartOptions.grid" [xaxis]="donutChartOptions.xaxis" [yaxis]="donutChartOptions.yaxis"
+                    [theme]="donutChartOptions.theme" [title]="donutChartOptions.title"
+                    [dataLabels]="donutChartOptions.dataLabels"
+                    [plotOptions]="donutChartOptions.plotOptions"></apx-chart>
+            </div>
+        </div>
+        <div class="dashboard-analytics">
+            <div *ngIf="selectedProject !== null && chartOptions !== null && chartOptions !== undefined">
+                <apx-chart [series]="chartSeries" [chart]="chartOptions.chart" [grid]="chartOptions.grid"
+                    [xaxis]="chartOptions.xaxis" [theme]="chartOptions.theme" [dataLabels]="chartOptions.dataLabels"
+                    [title]="chartOptions.title"></apx-chart>
+            </div>
+        </div>
+    </div> -->
+</div>
